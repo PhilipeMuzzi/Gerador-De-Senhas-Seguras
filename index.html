@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas seguras</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador De <br>Senhas Seguras</h1> <br>
+        <div class="display">
+            <input type="text" id="password" placeholder="Senha">
+            <img src="./images/copy.png" alt="Copy - image" onclick="copyPassword()">
+        </div>
+        <label for="passwordLength">Tamanho da senha: <span id="lengthValue">12 Caracteres</span></label>
+        <input type="range" id="passwordLength" min="4" max="21" value="12" oninput="updateLength()">
+        <button onclick="createPassword()">Generate Password</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
